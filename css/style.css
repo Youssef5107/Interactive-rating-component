@@ -40,6 +40,17 @@ main {
 	margin: 160px auto;
 }
 
+.svg-background {
+	background-color: var(--Light-Grey);
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0px -25px 30px;
+}
+
 .content {
 	padding-left: 20px;
 	padding-right: 30px;
