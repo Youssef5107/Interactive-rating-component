@@ -112,3 +112,17 @@ main {
 	color: rgb(255, 136, 0);
 	background-color: white;
 }
+
+.content-box2 {
+	max-width: 400px;
+	min-width: 200px;
+	height: fit-content;
+	border-radius: 7px;
+	background-color: var(--Dark-Blue);
+}
+
+.box2-svg {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
