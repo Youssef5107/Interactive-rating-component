@@ -20,3 +20,42 @@
 	font-family: light;
 	src: url(../../assets/Overpass/static/Overpass-Light.ttf);
 }
+
+body {
+	height: 100vh;
+	background-color: var(--Very-Dark-Blue);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+.content-box {
+	max-width: 400px;
+	min-width: 200px;
+	height: fit-content;
+	border-radius: 7px;
+	background-color: var(--Dark-Blue);
+	margin: 160px auto;
+}
+
+.content {
+	padding-left: 20px;
+	padding-right: 30px;
+}
+
+.content-title {
+	color: white;
+	font-family: regular;
+	font-size: 18px;
+	margin-top: 50px;
+}
+
+.content-text {
+	font-family: light;
+	font-size: 14px;
+	color: var(--Light-Grey);
+	margin-top: 10px;
+	max-width: 300px;
+}
