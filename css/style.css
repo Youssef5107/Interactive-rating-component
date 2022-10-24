@@ -114,12 +114,15 @@ main {
 	background-color: white;
 }
 
+
 .content-box2 {
 	max-width: 400px;
 	min-width: 200px;
 	height: fit-content;
 	border-radius: 7px;
 	background-color: var(--Dark-Blue);
+	margin: 0px auto;
+	display: none;
 }
 
 .box2-svg {
