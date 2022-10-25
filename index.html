@@ -11,31 +11,35 @@
 
 <body>
 	<main>
-		<div class="content-box">
-			<div class="svg-background">
-				<svg class="star-svg" width="17" height="16" xmlns="http://www.w3.org/2000/svg">
-					<path
-						d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
-						fill="#FC7614" />
-				</svg>
-			</div>
-			<div class="content">
-				<div class="content-title">How did we do?</div>
-				<div class="content-text">Please let us know how we did with your support request. All feedback is
-					appreciated
-					to help us improve our offering!</div>
+		<div>
+			<div class="content-box">
+				<div class="svg-background">
+					<svg class="star-svg" width="17" height="16" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
+							fill="#FC7614" />
+					</svg>
+				</div>
+				<div class="content">
+					<div class="content-title">How did we do?</div>
+					<div class="content-text">Please let us know how we did with your support request. All feedback is
+						appreciated
+						to help us improve our offering!</div>
+				</div>
+
+				<div class="ratting-buttons">
+					<button class="bt1" onclick="rate(this,1)">1</button>
+					<button class="bt2" onclick="rate(this,2)">2</button>
+					<button class="bt3" onclick="rate(this,3)">3</button>
+					<button class="bt4" onclick="rate(this,4)">4</button>
+					<button class="bt5" onclick="rate(this,5)">5</button>
+				</div>
+				<div class="submit-bt-area">
+					<button class="submit-bt" onclick="submit()">submit</button>
+				</div>
+
 			</div>
 
-			<div class="ratting-buttons">
-				<button class="bt" onclick="rate(this,1)">1</button>
-				<button class="bt" onclick="rate(this,2)">2</button>
-				<button class="bt" onclick="rate(this,3)">3</button>
-				<button class="bt" onclick="rate(this,4)">4</button>
-				<button class="bt" onclick="rate(this,5)">5</button>
-			</div>
-			<div class="submit-bt-area">
-				<button class="submit-bt">submit</button>
-			</div>
 			<div class="box-2">
 				<div class="content-box2">
 					<div class="box2-svg">
@@ -78,7 +82,7 @@
 					</div>
 					<div class="selected-rating-background">
 						<div class="selected-rating">
-							You selected / Add rating here / out of 5
+							You selected <span class="rate"></span> out of 5
 						</div>
 					</div>
 					<div class="thanking">

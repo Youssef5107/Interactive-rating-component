@@ -30,6 +30,8 @@ body {
 main {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .content-box {
@@ -79,7 +81,11 @@ main {
 
 }
 
-.bt {
+.bt1,
+.bt2,
+.bt3,
+.bt4,
+.bt5 {
 	border-radius: 50%;
 	background-color: var(--Light-Grey);
 	width: 40px;
