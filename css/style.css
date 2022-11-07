@@ -81,11 +81,7 @@ main {
 
 }
 
-.bt1,
-.bt2,
-.bt3,
-.bt4,
-.bt5 {
+.bt {
 	border-radius: 50%;
 	background-color: var(--Light-Grey);
 	width: 40px;

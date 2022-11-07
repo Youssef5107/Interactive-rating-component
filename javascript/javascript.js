@@ -1,8 +1,8 @@
-
+let selectedRate = document.getElementsByClassName("rate");
 function rate(selectedBtn, val) {
 	var btns = document.querySelectorAll(".bt");
 	// var selectedRating = document.getElementsByClassName("rate");
-	let selectedRate = document.getElementsByClassName("rate").innerHTML;
+	let selectedRate = document.getElementsByClassName("rate");
 
 	for (i = 0; i < btns.length; i++) {
 		btns[i].style.backgroundColor = "#959eac";
@@ -25,8 +25,9 @@ function submit() {
 		alert("You didn't choose a ratting");
 
 	} else {
-
 		box1visiblty.style.display = "none";
 		box2visiblty.style.display = "block";
+		selectedRate.innertext(val);
+
 	}
 }
