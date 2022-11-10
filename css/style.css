@@ -36,6 +36,7 @@ main {
 
 .content-box {
 	max-width: 400px;
+	width: 100%;
 	min-width: 200px;
 	height: fit-content;
 	border-radius: 7px;
@@ -162,4 +163,12 @@ main {
 	width: 265px;
 	margin: auto;
 
+}
+
+
+@media(max-width:400px) {
+	.content-box {
+		max-width: 300px;
+		width: 100%;
+	}
 }
