@@ -1,13 +1,7 @@
+var selectedRateValue = 0;
 
 
 function rate(selectedBtn, val) {
-
-	// var selectedRating = document.getElementsByClassName("rate");
-	let selectedRate = document.getElementsByClassName("rate");
-
-	if (selectedRate && selectedRate.length > 0)
-		selectedRate[0].innerText = val;
-
 
 	//Reset the color of the btns:
 	var btns = document.querySelectorAll(".bt");
@@ -18,23 +12,25 @@ function rate(selectedBtn, val) {
 	//Change the color of the selected btn:
 	selectedBtn.style.backgroundColor = "rgb(255, 136, 0)";
 
-
-
+	selectedRateValue = val;
 }
 
 
 function submit() {
-	var box2visiblty = document.querySelector(".content-box2");
-	var box1visiblty = document.querySelector(".content-box");
-	let selectedRate = document.getElementsByClassName("rate");
 
+	if (selectedRateValue > 0) {
+		let selectedRateElement = document.querySelector(".rate");
+		if (selectedRateElement) {
+			selectedRateElement.innerText = selectedRateValue;
+		}
 
-	if (selectedRate[0].innerText) {
-		box1visiblty.style.display = "none";
-		box2visiblty.style.display = "block";
+		var box2visiblty = document.querySelector(".content-box2");
+		var box1visiblty = document.querySelector(".content-box");
+
+		if (box2visiblty) box1visiblty.style.display = "none";
+		if (box1visiblty) box2visiblty.style.display = "block";
 	} else {
 		alert("You didn't choose a ratting");
-		//box1visiblty.preventDefault();
-		//box2visiblty.preventDefault();
 	}
 }
+
