@@ -38,10 +38,10 @@ main {
 	max-width: 400px;
 	width: 100%;
 	min-width: 200px;
-	height: fit-content;
+	height: 300px;
 	border-radius: 7px;
 	background-color: var(--Dark-Blue);
-	margin: 160px auto;
+	display: grid;
 }
 
 .svg-background {
@@ -120,12 +120,14 @@ main {
 
 .content-box2 {
 	max-width: 400px;
+	width: 100%;
 	min-width: 200px;
-	height: fit-content;
+	height: 300px;
 	border-radius: 7px;
 	background-color: var(--Dark-Blue);
 	margin: 0px auto;
 	display: none;
+	padding: 15px;
 }
 
 .box2-svg {
@@ -167,7 +169,9 @@ main {
 
 
 @media(max-width:400px) {
-	.content-box {
+
+	.content-box,
+	.content-box2 {
 		max-width: 300px;
 		width: 100%;
 	}
